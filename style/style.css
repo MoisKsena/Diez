@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Bold.woff2') format('woff2'),
+        url('PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prata';
+    src: url('Prata-Regular.woff2') format('woff2'),
+        url('Prata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Regular.woff2') format('woff2'),
+        url('PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: Prata;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3 {
+   font-family: PT Sans;
+   font-weight: 700;
+   font-size: 18px; 
+}
+
+h4 {
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px; 
+}
+
+p {
+   font-family: PT Sans;
+   font-weight: 400;
+   font-size: 16px; 
+}
+
+.header {
+    position: fixed;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+.container {
+    padding: 22px 16px;
+    margin: 0;
+}
+
+.logo {  
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+
+.logo__text {
+    text-decoration: none;
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #eec643;
+}
+
+.topbar {
+    display: flex;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-main {
+
+}
+
+.nav-main__list {
+    display: flex;
+    margin: 0;
+    list-style: none;   
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.nav-main__link {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.promo {
+    height: 100vh;
+    padding-top: 140px;
+    background-image: url(../images/bg_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0; 
+}
+
+.promo__content {
+    position: relative;
+    padding-left: 16px;
+    margin: 0;
+    
+}
+
+.promo__title {
+    width: 50%;
+    text-align: left;
+    color: #f9fcfc;
+}
+
+.text-content {
+    width: 70%;
+    color: #f9fcfc; 
+}
+
+.button {
+    padding-left: 16px;
+    height: 60px;
+    background-color: #eec643;
+}
+
+.fist-lesson__button {
+    text-decoration: none;
+    border: 0; 
+}
+
+.fist-lesson-text {
+    text-transform: uppercase;
+    text-align: center;
+    color: #f9fcfc;
+}
+
+.grow-music {
+
+}
+
+.grow-music__content {
+
+    margin-top: 25px;
+}
+
+.vocal {
+    background-image: url(../images/directions_card_img_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (min-width: 320px) {
+
+
+}

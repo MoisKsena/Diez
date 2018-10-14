@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'PT Sans';
-    src: url('PTSans-Bold.woff2') format('woff2'),
-        url('PTSans-Bold.woff') format('woff');
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Prata';
-    src: url('Prata-Regular.woff2') format('woff2'),
-        url('Prata-Regular.woff') format('woff');
+    src: url('../fonts/Prata-Regular.woff2') format('woff2'),
+        url('../fonts/Prata-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url('PTSans-Regular.woff2') format('woff2'),
-        url('PTSans-Regular.woff') format('woff');
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,6 +27,7 @@
 }
 
 body {
+    display: block;
     margin: 0 auto;
     font-family: sans-serif;
 }
@@ -56,10 +57,9 @@ p {
 }
 
 .header {
-    position: fixed;
+    position: fixed;  
+    margin: 0;
     padding: 0;
-    margin: 0 auto;
-    
 }
 
 .container {
@@ -67,8 +67,7 @@ p {
     margin: 0;
 }
 
-.logo {  
-    width: 25%;
+.logo {     
     padding: 0;
     margin: 0;
 }
@@ -83,27 +82,38 @@ p {
 }
 
 .topbar {
-    display: flex;
-    width: 75%;
     padding: 0;
     margin: 0;
 }
 
-.nav-main {
-
+.toggler {
+    position: relative;
+    left: 265px;
+    top: -30px;
+    background-color: #000;
+    border: none;
 }
 
-.nav-main__list {
-    display: flex;
+.toggler span {
+    color: #fff;
+}
+
+.nav-main__item {
+    display: inline-block;
     margin: 0;
+    padding: 0;
+}
+
+.nav-main__list {  
+    margin: 0;
+    padding: 0;
     list-style: none;   
-    justify-content: flex-end;
-    text-align: right;
 }
 
 .nav-main__link {
-    margin-right: 5px;
+    margin-right: 2px;
     text-decoration: none;
+    font-size: 10px;
     color: #fff;
 }
 
@@ -117,7 +127,6 @@ p {
 }
 
 .promo__content {
-    position: relative;
     padding-left: 16px;
     margin: 0;
     
@@ -130,22 +139,26 @@ p {
 }
 
 .text-content {
-    width: 70%;
+    padding-bottom: 85px;
+    width: 65%;
     color: #f9fcfc; 
 }
 
 .button {
-    padding-left: 16px;
     height: 60px;
+    margin: 16px;
     background-color: #eec643;
+    
 }
 
 .fist-lesson__button {
     text-decoration: none;
     border: 0; 
+    text-align: center;
 }
 
 .fist-lesson-text {
+    padding-top: 20px;
     text-transform: uppercase;
     text-align: center;
     color: #f9fcfc;

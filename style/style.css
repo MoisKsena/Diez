@@ -38,6 +38,12 @@ h1 {
     font-weight: 400;
 }
 
+h2 {
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+}
+
 h3 {
    font-family: PT Sans;
    font-weight: 700;
@@ -128,8 +134,7 @@ p {
 
 .promo__content {
     padding-left: 16px;
-    margin: 0;
-    
+    margin: 0; 
 }
 
 .promo__title {
@@ -153,8 +158,6 @@ p {
 
 .fist-lesson__button {
     text-decoration: none;
-    border: 0; 
-    text-align: center;
 }
 
 .fist-lesson-text {
@@ -165,18 +168,76 @@ p {
 }
 
 .grow-music {
-
+    margin: 0;
+    padding: 0 16px;
 }
 
-.grow-music__content {
-
-    margin-top: 25px;
+.grow-music__title {
+    width: 80%;
+    margin: 16px 0;
+    border-top: solid 2px #eec643;
+    border-bottom: solid 2px #eec643;
 }
 
-.vocal {
+.grow-music__item-vocal {
+    height: 144px;
+    margin-bottom: 16px;
+    padding: 0;
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.item-header,
+.item-description {
+    margin: 0;
+    color: #f9fcfc; 
+}
+
+.item-header {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.item-description {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.grow-music__item-gitara {
+    height: 144px;
+    margin-bottom: 16px;
+    padding: 0;
+    background-image: url(../images/directions_card_img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grow-music__item-piano{
+    width: 70%;
+    height: 144px;
+    margin-bottom: 16px;
+    padding: 0;
+    background-image: url(../images/directions_card_img_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grow-music__item-button {
+    width: 20%;
+    transform: rotate(-90deg);
+    width: 144px;
+    height: 60px;
+    margin: 0;
+    padding: 10px;
+    background-color: #eec643; 
+}
+
+.grow__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9fcfc;
 }
 
 @media (min-width: 320px) {

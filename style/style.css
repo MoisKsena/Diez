@@ -179,10 +179,13 @@ p {
     border-bottom: solid 2px #eec643;
 }
 
-.grow-music__item-vocal {
+.grow-music__item {
     height: 144px;
     margin-bottom: 16px;
-    padding: 0;
+    padding: 0; 
+}
+
+.grow-music__item--vocal {
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,26 +208,20 @@ p {
     padding-right: 50px;
 }
 
-.grow-music__item-gitara {
-    height: 144px;
-    margin-bottom: 16px;
-    padding: 0;
+.grow-music__item--gitara {
     background-image: url(../images/directions_card_img_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.grow-music__item-piano{
+.grow-music__item--piano{
     width: 70%;
-    height: 144px;
-    margin-bottom: 16px;
-    padding: 0;
     background-image: url(../images/directions_card_img_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.grow-music__item-button {
+.grow-music__item--button {
     width: 20%;
     transform: rotate(-90deg);
     width: 144px;
@@ -238,6 +235,11 @@ p {
     text-decoration: none;
     text-transform: uppercase;
     color: #f9fcfc;
+}
+
+
+.map {
+    width: 100%;
 }
 
 @media (min-width: 320px) {

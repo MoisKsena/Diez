@@ -38,11 +38,6 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
-    font-family: Prata;
-    font-size: 30px;
-    font-weight: 400;
-}
 
 h3 {
    font-family: PT Sans;
@@ -54,12 +49,6 @@ h4 {
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px; 
-}
-
-p {
-   font-family: PT Sans;
-   font-weight: 400;
-   font-size: 16px; 
 }
 
 .header {
@@ -177,6 +166,9 @@ p {
 
 .promo__title {
     width: 50%;
+    font-family: Prata;
+    font-size: 32px;
+    font-weight: 400;
     text-align: left;
     color: #f9fcfc;
 }
@@ -184,14 +176,16 @@ p {
 .text-content {
     padding-bottom: 85px;
     width: 65%;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px; 
     color: #f9fcfc; 
 }
 
 .button {
     height: 60px;
     margin: 16px;
-    background-color: #eec643;
-    
+    background-color: #eec643;   
 }
 
 .fist-lesson__button {
@@ -247,6 +241,9 @@ p {
     margin: 0;
     padding-left: 10px;
     padding-right: 50px;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .grow-music__item--gitara {
@@ -295,31 +292,20 @@ p {
 
 @media (min-width: 1000px) {
 
+body {
+    display: block;
+    width: 1280px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
 .container {
+    width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     padding: 30px 55px;
-    margin: 0;
-}
-
-.logo {   
-    padding: 0;
-    margin: 0;
-}
-
-.logo__text {
-    text-decoration: none;
-    font-family: Prata;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
-    color: #eec643;
-}
-
-.topbar {
-    padding: 0;
     margin: 0;
 }
 
@@ -330,19 +316,65 @@ p {
     list-style: none;   
 }
 
-.nav-main__item {
-    margin: 0;
-    padding: 0; 
-    
-}
-
 .nav-main__link {
-    margin-right: 30px;
+    margin: 0;
+    padding-left: 30px;
     text-decoration: none;
     text-align: right;
     font-family: PT Sans;
     font-size: 16px;
     color: #021a23;
 }
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 140px;
+    background-image: url(../images/bg_main.jpg);
+    background-repeat: no-repeat;
+ 
+}
+
+.promo__content {
+    padding-left: 55px;
+    margin: 0; 
+}
+
+.promo__title {
+    font-family: Prata;
+    font-size: 55px;
+    font-weight: 400;
+    text-align: left;
+    color: #f9fcfc;
+}
+
+.text-content {
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 20px; 
+    color: #f9fcfc; 
+}
+
+.button {
+    width: 270px;
+    height: 420px;
+    margin-right: 55px;
+    padding: 0; 
+    background-color: #fff;
+    border: 2px solid #021a23;    
+}
+
+.fist-lesson-text {
+    font-family: PT Sans;
+    font-size: 30px;
+    font-weight: 600;
+    color: #021a23;
+    text-transform: uppercase;
+    text-align: center;
+    color: #021a23;
+}
+
 
 }

@@ -66,7 +66,6 @@ h4 {
 .logo {     
     padding: 0;
     margin: 0;
-    width: 25%;
 }
 
 .logo__text {
@@ -83,23 +82,20 @@ h4 {
     margin: 0;
 }
 
------------------------------------------------------------------
-
 .menu {
-    margin: 0;
-    padding-left: 300px;
-    position: relative;
-    width: 30px;
-    height: 30px;
+    position: relative;   
+    left: 274px;
+    margin-right: 0;
+    padding-right: 16px;
+
 }
 .menu-global {
     position: absolute;
-    top: 24px;
-    left: 300px;
+    top: -30px;
 } 
 
 .menu-top {
-    left: 10px;
+    left: 9px;
     height: 24px;
     width: 2px;
     background-color: #f9fcfc; 
@@ -111,7 +107,7 @@ h4 {
     background-color: #f9fcfc; 
 }
 .menu-bottom {
-    left: 26px;
+    left: 27px;
     height: 24px;
     width: 2px;
     background-color: #f9fcfc; 
@@ -131,16 +127,15 @@ h4 {
   transform: rotate(45deg);
   transition: 0.55s 0.5s;
 }
- */
-------------------------------------------------------------------
 
 .nav-main__list {  
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;   
 }
 
-.nav-main__item {
+/* .nav-main__item {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -149,9 +144,9 @@ h4 {
 .nav-main__link {
     margin-right: 2px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0;
     color: #fff;
-}
+} */
 
 .promo {
     height: 100vh;
@@ -163,7 +158,7 @@ h4 {
 }
 
 .promo__content {
-    padding-left: 16px;
+    padding: 0 16px;
     margin: 0; 
 }
 
@@ -301,7 +296,16 @@ iframe {
     background-color: #eec643;   
 }
 
+.fist-lesson__button {
+    text-decoration: none;
+}
 
+.fist-lesson-text {
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f9fcfc;
+}
 
 
 

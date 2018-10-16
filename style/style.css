@@ -66,6 +66,7 @@ h4 {
 .logo {     
     padding: 0;
     margin: 0;
+    width: 25%;
 }
 
 .logo__text {
@@ -84,39 +85,41 @@ h4 {
 
 -----------------------------------------------------------------
 
-/* .menu {
-  cursor: pointer;
-  margin: 0 auto;
-  padding-left: 1.25em;
-  position: relative;
-  width: 40px;
-  height: 40px;
+.menu {
+    margin: 0;
+    padding-left: 300px;
+    position: relative;
+    width: 30px;
+    height: 30px;
 }
 .menu-global {
-  backface-visibility: hidden;
-  position: absolute;
-  left: 90%;
-  border-top: 2px solid white;
-  width: 100%;
-  transition: 0.55s;
-}
+    position: absolute;
+    top: 24px;
+    left: 300px;
+} 
 
 .menu-top {
     left: 10px;
-    transform: rotate(90deg);
+    height: 24px;
+    width: 2px;
+    background-color: #f9fcfc; 
 }
 .menu-middle {
     left: 18px;
-    transform: rotate(90deg);
+    height: 24px;
+    width: 2px;
+    background-color: #f9fcfc; 
 }
 .menu-bottom {
     left: 26px;
-    transform: rotate(90deg);
+    height: 24px;
+    width: 2px;
+    background-color: #f9fcfc; 
 }
 .menu-top-click {
   backface-visibility: hidden;
   top: 15px;
-  transform: rotate(50deg);
+  transform: rotate(-45deg);
   transition: 0.55s 0.5s;
 }
 .menu-middle-click {
@@ -125,7 +128,7 @@ h4 {
 .menu-bottom-click {
   backface-visibility: hidden;
   top: 15px;
-  transform: rotate(-410deg);
+  transform: rotate(45deg);
   transition: 0.55s 0.5s;
 }
  */
@@ -259,7 +262,14 @@ h4 {
     background-size: cover;
 }
 
+.grow-music__item {
+    position: relative;
+}
+
 .grow-music__item--button {
+/*     position: absolute;
+top: -118px;
+left: 176px; */
     width: 20%;
     transform: rotate(-90deg);
     width: 144px;
@@ -277,14 +287,38 @@ h4 {
 
 
 .map {
+    margin: 0 16px;
+    padding: 0;    
+}
+
+iframe {
     width: 100%;
 }
 
+.button__bottom {
+    height: 60px;
+    margin: 16px;
+    background-color: #eec643;   
+}
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
 @media (min-width: 320px) {
  
 .nav-main__list {
     display: none;
 }
+
+
 
 }
 
@@ -297,6 +331,10 @@ body {
     width: 1280px;
     margin: 0 auto;
     font-family: sans-serif;
+}
+
+.menu {
+    display: none;
 }
 
 .container {
@@ -331,10 +369,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 140px;
-    background-image: url(../images/bg_main.jpg);
-    background-repeat: no-repeat;
- 
+    background: url(../images/bg_main.jpg) no-repeat center top;
+    background-size: cover;
 }
 
 .promo__content {

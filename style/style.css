@@ -87,7 +87,6 @@ h4 {
     left: 274px;
     margin-right: 0;
     padding-right: 16px;
-
 }
 .menu-global {
     position: absolute;
@@ -198,15 +197,23 @@ h4 {
 }
 
 .grow-music,
-.pace {
+.pace,
+.school,
+.contacts {
     margin: 0;
-    padding: 0 16px;
+    padding: 27px 16px;
 }
 
 .grow-music__title,
-.pace__title {
+.pace__title,
+.school__title,
+.contacts__title {
     width: 80%;
+    font-family: Prata;
+    font-weight: 400;
+    font-size: 30px;
     margin: 16px 0;
+    padding: 4px 0;
     border-top: solid 2px #eec643;
     border-bottom: solid 2px #eec643;
 }
@@ -238,10 +245,11 @@ h4 {
 .item-description {
     margin: 0;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 55px;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
+    text-align: left;
 }
 
 .grow-music__item--gitara {
@@ -257,15 +265,8 @@ h4 {
     background-size: cover;
 }
 
-.grow-music__item {
-    position: relative;
-}
-
 .grow-music__item--button {
-/*     position: absolute;
-top: -118px;
-left: 176px; */
-    width: 20%;
+
     transform: rotate(-90deg);
     width: 144px;
     height: 60px;
@@ -275,14 +276,56 @@ left: 176px; */
 }
 
 .grow__button {
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #021a23;
+}
+
+.pace__item--composition {
+    background-image: url(../images/advantages_card_img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pace__item--result {
+    background-image: url(../images/advantages_card_img_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pace__item--studio {
+    width: 70%;
+    background-image: url(../images/advantages_card_img_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button__fist-lesson {
+    transform: rotate(-90deg);
+    width: 144px;
+    height: 60px;
+    margin: 0;
+    padding: 14px;
+    text-align: left;    
+}
+
+.pace__button {
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
     color: #f9fcfc;
 }
 
-
 .map {
-    margin: 0 16px;
+    margin: 0;
     padding: 0;    
 }
 
@@ -292,7 +335,7 @@ iframe {
 
 .button__bottom {
     height: 60px;
-    margin: 16px;
+    margin: 0;
     background-color: #eec643;   
 }
 

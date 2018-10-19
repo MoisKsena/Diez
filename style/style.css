@@ -200,8 +200,9 @@ h4 {
 .pace,
 .school,
 .contacts {
-    margin: 0;
+    margin: 0 auto;
     padding: 27px 16px;
+    position: relative;
 }
 
 .grow-music__title,
@@ -219,7 +220,8 @@ h4 {
 }
 
 .grow-music__item,
-.pace__item {
+.pace__item,
+.school__content-item {
     height: 144px;
     margin-bottom: 16px;
     padding: 0; 
@@ -260,17 +262,22 @@ h4 {
 
 .grow-music__item--piano{
     width: 70%;
+    margin: 0;
+    padding: 0;
     background-image: url(../images/directions_card_img_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .grow-music__item--button {
-
+    position: absolute;
+    width: 25%;
+    bottom: 53px;
+    right: 0;
     transform: rotate(-90deg);
     width: 144px;
     height: 60px;
-    margin: 0;
+    margin: 16px;
     padding: 10px;
     background-color: #eec643; 
 }
@@ -307,6 +314,9 @@ h4 {
     transform: rotate(-90deg);
     width: 144px;
     height: 60px;
+    position: absolute;  
+    bottom: 85px;
+    right: 0;
     margin: 0;
     padding: 14px;
     text-align: left;    
@@ -324,8 +334,40 @@ h4 {
     color: #f9fcfc;
 }
 
-.map {
+.school__content-item-cherry{
+    background-image: url(../images/video_card_img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.school__content-item-violin,
+.school__content-item-summer,
+.school__content-item-horse {
+    display: none;
+}
+
+.contacts__address {
     margin: 0;
+    padding-left: 10px;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    color: #021a23;
+}
+
+.contacts__address a{
+    margin: 0;    
+    text-decoration: none;
+    color: #021a23;
+}
+
+.item-description--address {
+    margin: 0;
+}
+
+.map {
+    margin-top: 16px;
     padding: 0;    
 }
 
@@ -408,6 +450,8 @@ body {
     text-align: right;
     font-family: PT Sans;
     font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #021a23;
 }
 

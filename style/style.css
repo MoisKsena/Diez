@@ -237,7 +237,7 @@ h4 {
     width: 100%;
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .item-header,
@@ -249,6 +249,9 @@ h4 {
     margin: 0;
     padding-top: 30px;
     padding-left: 10px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .item-description {
@@ -291,6 +294,13 @@ h4 {
     text-decoration: none;
     text-transform: uppercase;
     color: #021a23;
+}
+
+.grow-music__item--lectures,
+.school__content-item-violin,
+.school__content-item-summer,
+.school__content-item-horse {
+    display: none;
 }
 
 .pace__item--composition {
@@ -347,11 +357,6 @@ h4 {
     text-align: justify;
 }
 
-.school__content-item-violin,
-.school__content-item-summer,
-.school__content-item-horse {
-    display: none;
-}
 
 .contacts__address {
     margin: 0;
@@ -515,12 +520,122 @@ body {
 .school,
 .contacts {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 570px;
     margin: 0 auto;
-    padding: 27px 16px;
+    padding: 45px 56px;
+}
+
+.item-header,
+.item-description {
+    color: #f9fcfc; 
+}
+
+.item-header {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.item-description {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 55px;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
 }
 
 .grow-music__title-wrap {
-    
+    width: 15%;
+    margin-top: 0;
+    padding: 0;
+    transform: rotate(-90deg);
 }
+
+.grow-music__item {
+    height: 271px;
+    margin-left: 30px;
+    padding-left: 28px;
+}
+
+.grow-music-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;  
+    height: 570px;
+    margin: 0;
+    padding: 0;
+}
+
+.grow-music__title,
+.pace__title,
+.school__title,
+.contacts__title {
+    font-family: Prata;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 16px 0;
+    padding: 4px 0;
+    border-top: solid 2px #eec643;
+    border-bottom: solid 2px #eec643;
+}
+
+.grow-music__item--vocal {
+    width: 50%;
+    order: 2;
+
+}
+
+.grow-music__item--gitara {
+    width: 35%;
+    order: 1;
+}
+
+.grow-music__item--piano {
+    width: 35%;
+    order: 3;
+}
+
+.grow-music__item-half {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;  
+    order: 4;
+}
+
+.grow-music__item--lectures {
+    width: 50%;
+    background-image: url(../images/directions_card_img_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grow-music__item--button {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 28px;
+    order: 1;
+    transform: rotate(0deg);
+    background-color: #eec643; 
+}
+
+.grow__button {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #f9fcfc;
+    text-align-last: left;
+}
+
 
 }

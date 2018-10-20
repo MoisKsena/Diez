@@ -32,6 +32,7 @@ body {
     font-family: sans-serif;
 }
 
+
 h1 {
     font-family: Prata;
     font-size: 32px;
@@ -200,9 +201,9 @@ h4 {
 .pace,
 .school,
 .contacts {
+    display: block;
     margin: 0 auto;
     padding: 27px 16px;
-    position: relative;
 }
 
 .grow-music__title,
@@ -227,19 +228,25 @@ h4 {
     padding: 0; 
 }
 
+.grow-music__title-wrap {
+    margin: 0;
+    padding: 0;
+}
+
 .grow-music__item--vocal {
+    width: 100%;
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .item-header,
 .item-description {
-    margin: 0;
     color: #f9fcfc; 
 }
 
 .item-header {
+    margin: 0;
     padding-top: 30px;
     padding-left: 10px;
 }
@@ -261,24 +268,19 @@ h4 {
 }
 
 .grow-music__item--piano{
+    display: inline-block;
     width: 70%;
-    margin: 0;
-    padding: 0;
     background-image: url(../images/directions_card_img_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .grow-music__item--button {
-    position: absolute;
-    width: 25%;
-    bottom: 53px;
-    right: 0;
-    transform: rotate(-90deg);
+    display: inline-block;
+    height: 30%;
     width: 144px;
-    height: 60px;
-    margin: 16px;
     padding: 10px;
+    transform: rotate(-90deg);
     background-color: #eec643; 
 }
 
@@ -304,6 +306,7 @@ h4 {
 }
 
 .pace__item--studio {
+    display: inline-block;
     width: 70%;
     background-image: url(../images/advantages_card_img_3.jpg);
     background-repeat: no-repeat;
@@ -311,20 +314,15 @@ h4 {
 }
 
 .button__fist-lesson {
-    transform: rotate(-90deg);
+    display: inline-block;
+    height: 30%;
     width: 144px;
-    height: 60px;
-    position: absolute;  
-    bottom: 85px;
-    right: 0;
-    margin: 0;
+    transform: rotate(-90deg);
     padding: 14px;
     text-align: left;    
 }
 
 .pace__button {
-    margin: 0;
-    padding: 0;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
@@ -335,9 +333,18 @@ h4 {
 }
 
 .school__content-item-cherry{
+    width: 90%;
+    margin: 0 auto;
+    height: 186px;
     background-image: url(../images/video_card_img_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.school__caption--sign {
+    margin: 0;
+    padding-top: 80px;
+    text-align: justify;
 }
 
 .school__content-item-violin,
@@ -485,23 +492,35 @@ body {
 }
 
 .button {
+    height: 417px;
     width: 270px;
-    height: 420px;
-    margin-right: 55px;
-    padding: 0; 
+    padding: 0;
+    border: solid 3px #021a23;
     background-color: #fff;
-    border: 2px solid #021a23;    
+    margin-right: 55px;
 }
 
 .fist-lesson-text {
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
     font-family: PT Sans;
     font-size: 30px;
-    font-weight: 600;
-    color: #021a23;
-    text-transform: uppercase;
-    text-align: center;
+    font-weight: 700;
     color: #021a23;
 }
 
+.grow-music,
+.pace,
+.school,
+.contacts {
+    display: flex;
+    margin: 0 auto;
+    padding: 27px 16px;
+}
+
+.grow-music__title-wrap {
+    
+}
 
 }

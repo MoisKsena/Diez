@@ -174,7 +174,7 @@ h4 {
 .promo {
     height: 100vh;
     padding-top: 140px;
-    background-image: url(../images/bg_main.jpg);
+    background-image: url(../images/bg_main_mobil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0; 
@@ -256,11 +256,21 @@ h4 {
     padding: 0;
 }
 
+.grow-music-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .grow-music__item--vocal {
     width: 100%;
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.grow-music__item--lectures {
+    display: none;
 }
 
 .item-header,
@@ -304,21 +314,24 @@ h4 {
 }
 
 .grow-music__item--button {
-    display: inline-block;
-    height: 30%;
-    width: 144px;
+    position: relative;
+    width: 25%;
     padding: 10px;
-    transform: rotate(-90deg);
     background-color: #eec643; 
 }
 
 .grow__button {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    top:95%;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     color: #021a23;
+    
 }
 
 .pace__item--composition {
@@ -437,25 +450,21 @@ iframe {
 .nav-main__list {
     display: none;
 }
-.grow-music__item--lectures,
+/*.grow-music__item--lectures,
 .school__content-item-violin,
 .school__content-item-summer,
 .school__content-item-horse {
     display: none;
 }
-
+*/
 
 }
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1280px) {
 
-body {
-    width: 1280px;
-    margin: 0 auto;
-    font-family: sans-serif;
-}
+
 
 .menu {
     display: none;
@@ -703,6 +712,7 @@ body {
 }
 
 .grow-music__item--lectures {
+    display: flex;
     width: 50%;
     background-image: url(../images/directions_card_img_4.jpg);
     background-repeat: no-repeat;

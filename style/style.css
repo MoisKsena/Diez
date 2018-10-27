@@ -27,8 +27,8 @@
 }
 
 body {
-    display: block;
     margin: 0 auto;
+    padding: 0;
     font-family: sans-serif;
 }
 
@@ -60,13 +60,11 @@ h4 {
 }
 
 .container {
-    display: inline-block;
     padding: 22px 16px;
     margin: 0;
 }
 
 .logo {    
-    display: inline-block; 
     padding: 0;
     margin: 0;
 }
@@ -81,7 +79,6 @@ h4 {
 }
 
 .topbar {
-    display: inline-block;
     padding: 0;
     margin: 0;
 }
@@ -180,8 +177,9 @@ h4 {
     background-position: 50% 0; 
 }
 
+
 .promo__content {
-    padding: 0 16px;
+    padding: 0 18px;
     margin: 0; 
 }
 
@@ -196,11 +194,15 @@ h4 {
 
 .text-content {
     padding-bottom: 85px;
-    width: 65%;
+    width: 68%;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px; 
     color: #f9fcfc; 
+}
+
+.wrapper-form {
+    display: none;
 }
 
 .button {
@@ -224,9 +226,8 @@ h4 {
 .pace,
 .school,
 .contacts {
-    display: inline-block;
     margin: 0 auto;
-    padding: 27px 16px;
+    padding: 25px 16px;
 }
 
 .grow-music__title,
@@ -256,7 +257,8 @@ h4 {
     padding: 0;
 }
 
-.grow-music-desktop {
+.grow-music-desktop,
+.pace-halfparttwo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -304,9 +306,8 @@ h4 {
     background-size: cover;
 }
 
-.grow-music__item--piano{
-    display: inline-block;
-    width: 70%;
+.grow-music__item--piano {
+    width: 75%;
     margin: 0;
     background-image: url(../images/directions_card_img_3.jpg);
     background-repeat: no-repeat;
@@ -315,61 +316,72 @@ h4 {
 
 .grow-music__item--button {
     position: relative;
-    width: 25%;
+    width: 20%;
     padding: 10px;
     background-color: #eec643; 
 }
 
 .grow__button {
     position: absolute;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     transform: rotate(-90deg);
-    transform-origin: left top;
-    top:95%;
+    justify-content: center;
+    align-items: center;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #021a23;
-    
+    color: #021a23;    
 }
 
 .pace__item--composition {
     width: 100%;
-    background-image: url(../images/advantages_card_img_1.jpg);
+    background-image: url(../images/advantages_card_img_1_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pace__item--result {
     width: 100%;
-    background-image: url(../images/advantages_card_img_2.jpg);
+    background-image: url(../images/advantages_card_img_2_mobile.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .pace__item--studio {
-    display: inline-block;
-    width: 70%;
-    background-image: url(../images/advantages_card_img_3.jpg);
+    width: 75%;
+    background-image: url(../images/advantages_card_img_3_mobile.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .button__fist-lesson {
-    display: inline-block;
-    height: 30%;
-    width: 144px;
-    transform: rotate(-90deg);
+    position: relative;
+    width: 20%;
+    height: 144px;
+    margin: 0;
     padding: 14px;
-    text-align: left;    
+    overflow: hidden;   
 }
 
 .pace__button {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    transform: rotate(-90deg);
+    justify-content: center;
+    align-items: center;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
-    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
     color: #f9fcfc;
@@ -382,6 +394,12 @@ h4 {
     background-image: url(../images/video_card_img_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.school__content-item-violin,
+.school__content-item-summer,
+.school__content-item-horse {
+    display: none;
 }
 
 .school__caption--sign {
@@ -450,13 +468,7 @@ iframe {
 .nav-main__list {
     display: none;
 }
-/*.grow-music__item--lectures,
-.school__content-item-violin,
-.school__content-item-summer,
-.school__content-item-horse {
-    display: none;
-}
-*/
+
 
 }
 
@@ -466,20 +478,30 @@ iframe {
 
 
 
-.menu {
+.nav-toggle {
     display: none;
 }
 
 .container {
-    width: 1280px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between; 
-    padding: 30px 55px;
-    margin: 0;
+    padding: 34px 55px;
+    margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-content: flex-end;
+}
 
 .nav-toggle {
     display: none;
@@ -499,7 +521,7 @@ iframe {
     text-align: right;
     font-family: PT Sans;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     color: #021a23;
 }
@@ -511,8 +533,8 @@ iframe {
     justify-content: space-between;
     height: 770px;
     margin: 0;
-    p0
-    background: url(../images/bg_main.jpg) no-repeat 95%;
+    padding: 0;
+    background: url(../images/bg_main.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -536,25 +558,14 @@ iframe {
     color: #f9fcfc; 
 }
 
-/* .form-title {
-    text-align: center;
-    font-family: PT Sans;
-    font-weight: 700;
-    font-size: 30px;
-    color: #021a23;
-} 
-
-.form-description {
-    padding-left: 30px;
-    text-align: left;
-    font-family: PT Sans;
-    font-weight: 400;
-    font-size: 20px;
-    color: #021a23; 
-    vertical-align: bottom;  
-} */
-
 .button {
+    display: none;
+}
+
+
+.wrapper-form {
+    position: relative;
+    display: flex;
     height: 417px;
     width: 270px;
     padding: 0;
@@ -564,48 +575,100 @@ iframe {
     margin-right: 55px;
 }
 
-.fist-lesson__button {
-    text-decoration: none;
-}
-
-.fist-lesson-text {
+.form-title {
     margin: 0;
-    padding: 30px;
+    padding: 20px 30px;
+    text-align: left;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 30px;
+    color: #021a23;
+} 
+
+.form-title--sign {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+    margin: 0;
     text-align: center;
     font-family: PT Sans;
+    font-weight: 400;
     font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #021a23;
+    color: #f9fcfc;
+    background-color: #021a23;
+    border: none;
 }
+
+.description-title {
+    padding-left: 30px;
+    margin: 0;
+    text-align: left;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 20px;
+    color: #021a23; 
+    vertical-align: bottom; 
+}
+
+.description-box {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.form-description {
+    margin-left: 30px;
+    text-align: left;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 20px;
+    color: #021a23; 
+    vertical-align: bottom; 
+    border: none;
+    border-bottom: 2px solid #021a23; 
+}
+
+.option-disc:before:after {
+    padding-left: 15px;
+}
+
 
 .grow-music,
 .pace,
 .school,
 .contacts {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
     width: 100%;
     min-height: 570px;
     margin: 0;
     padding: 45px 56px;
 }
 
+.grow-music__title-wrap {
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    width: 70px;
+    height: 570px;
+}
 
 .grow-music__title,
-.school__title {
+.school__title {  
     display: flex;
-    width: 100%;
+    width: 70px;
+    height: 570px;
     margin: 16px;
     padding: 4px 0;
     font-family: Prata;
     font-weight: 400;
     font-size: 30px;
-    text-align: center;
     border-top: solid 2px #eec643;
     border-bottom: solid 2px #eec643;
 }
@@ -634,17 +697,6 @@ iframe {
     text-align: left;
 }
 
-.grow-music__title-wrap {
-    display: flex;
-    position: absolute;
-    left: -200px;
-    height: 70px;
-    width: 570px;
-    margin-top: 0;
-    padding: 0;
-    transform: rotate(-90deg); 
-}
-
 .grow-music__item {
     height: 271px;
     margin-left: 30px;
@@ -659,7 +711,6 @@ iframe {
     padding-left: 60px;
 }
 
-.grow-music__title,
 .pace__title,
 .school__title,
 .contacts__title {
@@ -671,9 +722,9 @@ iframe {
     border-bottom: solid 2px #eec643;
 }
 
-.grow-music__title,
+
 .school__title {
-    width: 570px;
+    width: 70px;
     margin: 0;
 }
 
@@ -713,17 +764,18 @@ iframe {
 
 .grow-music__item--lectures {
     display: flex;
-    width: 50%;
+    width: 25%;
+    order: 5;
     background-image: url(../images/directions_card_img_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .grow-music__item--button {
-    width: 50%;
+    width: 25%;
     padding-top: 30px;
-    padding-left: 28px;
-    transform: rotate(0deg);
+    padding: 0;
+    order: 6;
     background-color: #eec643; 
 }
 

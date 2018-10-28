@@ -57,6 +57,7 @@ h4 {
     width: 100%; 
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 .container {
@@ -257,16 +258,9 @@ h4 {
     padding: 0;
 }
 
-.grow-music-desktop,
-.pace-halfparttwo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .grow-music__item--vocal {
     width: 100%;
-    background-image: url(../images/directions_card_img_2.jpg);
+    background-image: url(../images/directions_card_img_2_mobil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -299,9 +293,17 @@ h4 {
     text-align: left;
 }
 
+.grow-music-desktop,
+.pace-halfparttwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 .grow-music__item--gitara {
     width: 100%;
-    background-image: url(../images/directions_card_img_1.jpg);
+    background-image: url(../images/directions_card_img_1_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -309,7 +311,7 @@ h4 {
 .grow-music__item--piano {
     width: 75%;
     margin: 0;
-    background-image: url(../images/directions_card_img_3.jpg);
+    background-image: url(../images/directions_card_img_3_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -641,36 +643,34 @@ iframe {
     position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
     width: 100%;
     min-height: 570px;
     margin: 0;
-    padding: 45px 56px;
+    padding: 90px 56px;
 }
 
 .grow-music__title-wrap {
     display: flex;
-    position: absolute;
+
     transform: rotate(-90deg);
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    padding: 0;
-    width: 70px;
-    height: 570px;
 }
 
-.grow-music__title,
-.school__title {  
+
+.grow-music__title{ 
+    position: absolute; 
     display: flex;
-    width: 70px;
-    height: 570px;
-    margin: 16px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
     padding: 4px 0;
     font-family: Prata;
     font-weight: 400;
     font-size: 30px;
-    border-top: solid 2px #eec643;
-    border-bottom: solid 2px #eec643;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-header,
@@ -703,13 +703,16 @@ iframe {
     padding-left: 28px;
 }
 
-.grow-music-desktop {
+.grow-music-desktop,
+.pace-halfparttwo {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;  
+    align-content: space-between;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 28px;
 }
+
 
 .pace__title,
 .school__title,
@@ -737,50 +740,56 @@ iframe {
 }
 
 .grow-music__item--vocal {
-    width: 50%;
+    padding: 0;
+    margin: 0;
+    width: 60%;
     order: 2;
+    background-image: url(../images/directions_card_img_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grow-music__item--gitara {
     width: 35%;
     order: 1;
-}
-
-.grow-music__item--piano {
-    width: 35%;
-    order: 3;
-}
-
-.grow-music__item-half {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
-    width: 50%;
-    justify-content: space-between;  
-    order: 4;
-}
-
-.grow-music__item--lectures {
-    display: flex;
-    width: 25%;
-    order: 5;
-    background-image: url(../images/directions_card_img_4.jpg);
+    background-image: url(../images/directions_card_img_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.grow-music__item--button {
-    width: 25%;
-    padding-top: 30px;
+.grow-music__item--piano {
+    width: 35%;
     padding: 0;
-    order: 6;
+    order: 3;
+    background-image: url(../images/directions_card_img_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grow-music__item--lectures {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 28.5%;
+    padding: 0;
+    margin: 0;
+    order: 4;
+    background-image: url(../images/directions_card_img_4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.grow-music__item--button {
+    width: 29%;
+    padding-top: 30px;
+    margin: 0;
+    order: 5;
     background-color: #eec643; 
 }
 
 .grow__button {
     margin: 0;
+    transform: rotate(0deg);
     font-family: PT Sans;
     font-weight: 700;
     font-size: 30px;
@@ -889,15 +898,26 @@ iframe {
 
 .school__title-wrap {
     display: flex;
-    position: absolute;
-    left: -180px;
+    position: relative;
     height: 70px;
     width: 570px;
+   
+}
+
+.school__title {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     margin-top: 0;
     padding: 0;
     transform: rotate(-90deg); 
+    font-family: Prata;
+    font-weight: 400;
+    font-size: 30px;
+    border-top: solid 2px #eec643;
+    border-bottom: solid 2px #eec643;
 }
-
 
 .school__content {
     display: flex;

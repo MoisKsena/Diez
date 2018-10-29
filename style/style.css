@@ -54,7 +54,7 @@ h4 {
 
 .header {
     position: fixed; 
-    width: 100%; 
+    width: 1280px; 
     margin: 0;
     padding: 0;
     z-index: 1;
@@ -517,10 +517,22 @@ body {
     padding: 0;
 }
 
+.logo__text {
+    text-decoration: none;
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #eec643;
+}
+
+
+
+
 .topbar {
     display: flex;
     flex-direction: row;
-      align-content: flex-end;
+    align-content: flex-end;
     margin: 0;
     padding: 0;
 }
@@ -531,8 +543,7 @@ body {
 
 .nav-main__list { 
     display: flex; 
-    flex-direction: row;  
-  
+    flex-direction: row;    
     margin: 0;
     padding: 0;
     list-style: none;   
@@ -955,6 +966,7 @@ body {
 .pace__form-description {
     width: 200px;
     margin-left: 30px;
+    padding-top: 20px;
     text-align: left;
     font-family: PT Sans;
     font-weight: 400;

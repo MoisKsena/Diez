@@ -1,13 +1,16 @@
+$(document).ready(function(){
+
+var myMap;
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.94199306418127,30.279423499999996],
-            zoom: 15
+            zoom: 10
         }, {
             searchControlProvider: 'yandex#search'
         }),
 
         // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.map(
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
@@ -20,7 +23,7 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#imageWithContent',
             // Своё изображение иконки метки.
-            iconImageHref: 'images/geotag.png',
+            iconImageHref: '../images/geotag.png',
             // Размеры метки.
             iconImageSize: [48, 48],
             // Смещение левого верхнего угла иконки относительно
@@ -34,4 +37,6 @@ ymaps.ready(function () {
 
     myMap.geoObjects
         .add(myPlacemarkWithContent);
+});
+
 });

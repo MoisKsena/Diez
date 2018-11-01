@@ -522,7 +522,7 @@ h4 {
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
 
 body {
     margin: 0 auto;
@@ -801,10 +801,9 @@ body {
 }
 
 .grow-music__item--vocal {
-    flex-basis:50%;
     padding: 0; 
     margin: 0;
-    max-width: 50%;
+    max-width: 53%;
     order: 2;
     background-image: url(../images/directions_card_img_2.jpg);
     background-repeat: no-repeat;
@@ -812,8 +811,7 @@ body {
 }
 
 .grow-music__item--gitara {
-    flex-basis:41.66667%;
-    max-width: 41.66667%;
+    max-width: 43.66667%;
     padding: 0;
     margin: 0;
     order: 1;
@@ -823,8 +821,7 @@ body {
 }
 
 .grow-music__item--piano {
-    flex-basis:41.66667%;
-    max-width: 41.66667%;
+    max-width: 43.66667%;
     padding: 0;
     margin-top: 30px;
     order: 3;
@@ -911,7 +908,7 @@ body {
 }
 
 .pace__item--composition {
-    width: 49.9%;
+    width: 47%;
     height: 470px;
     padding: 0;
     margin: 0;
@@ -921,9 +918,9 @@ body {
 }
 
 .pace__item--result {
-    width: 49.9%;
+    width: 47%;
     height: 470px;
-    margin: 0;
+    margin-left: 30px;
     padding: 0;
     background-image: url(../images/advantages_card_img_2.jpg);
     background-repeat: no-repeat;
@@ -1066,8 +1063,8 @@ body {
 }
 
 .school__content-item-cherry{
-    width: 66.66667%;
-    margin: 0;
+    width: 72%;
+    margin-right: 30px;
     padding: 0;
     height: 100%;
     background-image: url(../images/video_card_img_1.jpg);

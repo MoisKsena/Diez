@@ -61,6 +61,8 @@ h4 {
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
     padding: 22px 16px;
     margin: 0;
 }
@@ -69,6 +71,7 @@ h4 {
     width: 70px;   
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
 
 .logo__text {
@@ -103,7 +106,7 @@ h4 {
   left: -10px;
   width: 3px;
   height: 100%;
-  background-color: black;
+  background-color: #000;
 }
 
 .nav-toggle:after {
@@ -113,7 +116,7 @@ h4 {
   left: 10px;
   width: 3px;
   height: 100%;
-  background-color: black;
+  background-color: #000;
 }
 
 .nav-toggle:before {
@@ -164,14 +167,34 @@ h4 {
 
 
 .nav-main__list {  
-    display: none;
     margin: 0;
-    padding: 0;
-    list-style: none;   
+    list-style: none; 
+    display: block;
+    width: 100vw;
+    height: 225px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding: 75px 15px;
+    font-family: PT Sans;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #000; 
+}
+
+.nav-main__item {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.nav-main__link {
+    text-decoration: none;
+    color: #FFF;
 }
 
 .promo {
-    min-height: 770px;
+    height: 100vh;
     padding-top: 140px;
     background-image: url(../images/bg_main_mobil.jpg);
     background-repeat: no-repeat;
@@ -252,6 +275,7 @@ h4 {
 .grow-music__item,
 .pace__item,
 .school__content-item {
+    position: relative;
     height: 144px;
     margin-bottom: 16px;
     padding: 0; 
@@ -370,7 +394,7 @@ h4 {
 }
 
 .button__fist-lesson {
-    position: relative;
+    display: flex;
     width: 20%;
     height: 144px;
     margin: 0;
@@ -379,15 +403,7 @@ h4 {
 }
 
 .pace__button {
-    position: absolute;
-    display: flex;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
     transform: rotate(-90deg);
-    justify-content: center;
-    align-items: center;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
@@ -396,14 +412,26 @@ h4 {
     color: #f9fcfc;
 }
 
-.school__content-item-cherry{
+.school__content-item-cherry {
     width: 90%;
     margin: 0 auto;
     height: 186px;
-    background-image: url(../images/video_card_img_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+.school__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.school__image img {
+    width: 100%;
+    min-height: 100%;
+}
+
 
 .school__content-item-violin,
 .school__content-item-summer,
@@ -514,10 +542,6 @@ h4 {
 ---------------------------------------------------------------------
 @media (min-width: 320px) {
  
-.nav-main__list {
-    display: none;
-}
-
 }
 
 
@@ -797,7 +821,8 @@ body {
 .pace__item,
 .school__content-item {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    overflow: hidden;
 }
 
 .grow-music__item--vocal {
@@ -857,6 +882,7 @@ body {
     display: flex;
     margin: 0;
     padding-left: 30px;
+    align-items: flex-start;
     transform: rotate(0deg);
     font-family: PT Sans;
     font-weight: 700;
@@ -898,12 +924,12 @@ body {
 }
 
 .pace__title {
+    padding-left: 20px;
+    margin: 0;
     align-items: center;
     font-family: Prata;
     font-weight: 400;
     font-size: 50px;
-    padding: 0;
-    margin: 0;
     border: none;
 }
 
@@ -1040,8 +1066,9 @@ body {
 
 
 .school__title-wrap {
-    display: flex;   
-    width: 8.33333%;
+    display: flex; 
+    flex-basis: 8.33333%;  
+    max-width: 8.33333%;
     padding: 0; 
     margin: 0;  
 }
@@ -1055,6 +1082,12 @@ body {
 }
 
 .school__caption {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1062,14 +1095,15 @@ body {
     padding: 0;
 }
 
-.school__content-item-cherry{
+.school__content-item-cherry {
     width: 72%;
     margin-right: 30px;
     padding: 0;
     height: 100%;
-    background-image: url(../images/video_card_img_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.school__content-item-cherry .school__caption {
+    justify-content: flex-start;
 }
 
 
@@ -1094,11 +1128,10 @@ body {
 
 .school__caption--sign {
     display: flex;
-    height: 167px;
     margin: 0;
-    padding-top: 125px;
     padding-left: 10px;
-    text-align: justify;
+    padding-bottom: 12px;
+    justify-content: flex-end;
 }
 
 .school__content-item-violin {
@@ -1106,9 +1139,6 @@ body {
     height: 167px;
     width: 25%;
     padding-bottom: 30px;
-    background-image: url(../images/video_card_img_2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .school__content-item-summer {
@@ -1117,18 +1147,12 @@ body {
     width: 25%;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-image: url(../images/video_card_img_3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .school__content-item-horse {
     display: flex;
     height: 167px;
     width: 25%;
-    background-image: url(../images/video_card_img_4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .button__bottom {
@@ -1165,7 +1189,7 @@ body {
 }
 
 .contacts__title {
-    width: 50%;
+    width: 65%;
     padding-left: 20px;
     margin: 0;
     font-family: Prata;

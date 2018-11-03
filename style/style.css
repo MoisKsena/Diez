@@ -71,7 +71,7 @@ h4 {
     width: 70px;   
     padding: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo__text {
@@ -97,6 +97,7 @@ h4 {
     width: 22px;
     height: 24px;
     margin-left: 150px;
+    z-index: 1;
 }
 
 .nav-toggle:before {
@@ -106,7 +107,7 @@ h4 {
   left: -10px;
   width: 3px;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .nav-toggle:after {
@@ -116,7 +117,7 @@ h4 {
   left: 10px;
   width: 3px;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .nav-toggle:before {
@@ -129,8 +130,7 @@ h4 {
 
 .nav-toggle span {
   position: absolute;
-  left: 0;
-  top: 0;
+
   bottom: 0;
   margin: auto;
   width: 3px;
@@ -146,8 +146,7 @@ h4 {
   width: 3px;
   height: 100%;
   top: 0;
-  right: 0;
-  background-color: black;
+  background-color: #fff;
 }
 
 .nav-toggle:hover:before,
@@ -166,16 +165,17 @@ h4 {
 
 
 
-.nav-main__list {  
+.nav-main__list { 
+display: none; 
     margin: 0;
     list-style: none; 
-    display: block;
+    /* display: block; */
     width: 100vw;
     height: 225px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 1;
     padding: 75px 15px;
     font-family: PT Sans;
     font-size: 15px;
@@ -254,6 +254,7 @@ h4 {
 .grow-music,
 .pace,
 .school {
+    position: relative;
     margin: 0 auto;
     padding: 0 16px;
 
@@ -418,6 +419,21 @@ h4 {
     height: 186px;
 }
 
+.triangle-small {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 75px;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    margin: auto;
+    border: 27px solid transparent;
+    border-top: 35px solid #eec643;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
 .school__image {
     position: absolute;
     top: 0;
@@ -448,24 +464,24 @@ h4 {
 }
 
 .slick-arrow {
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 0;
-  color: transparent;
-  overflow: hidden;
-  border: 0;
-
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    color: transparent;
+    overflow: hidden;
+    border: 0;
+    transform: translateX(-50%);
 }
-
+ 
 .slick-next {
     right: 0;
 }
 
 .slick-prev {
     left: 0;
+    z-index: 1;
 }
 
 .slick-next:before {
@@ -475,8 +491,8 @@ h4 {
     left: 50%;
     width: 15px;
     height: 15px;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
     transform: translate(-50% -50%) rotate(-45deg);
 }
 
@@ -560,12 +576,13 @@ body {
     width: 100%; 
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav-toggle {
     display: none;
 }
+
 
 .container {
     display: flex;
@@ -743,6 +760,7 @@ body {
 .grow-music,
 .school {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -1073,6 +1091,7 @@ body {
     margin: 0;  
 }
 
+
 .school__content {
     display: flex;
     flex-direction: column;
@@ -1095,7 +1114,26 @@ body {
     padding: 0;
 }
 
+.triangle-small {
+    display: none;
+}
+
+.triangle-big {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 385px;
+    border: 55px solid transparent;
+    border-top: 70px solid #eec643;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
 .school__content-item-cherry {
+    position: relative;
     width: 72%;
     margin-right: 30px;
     padding: 0;
@@ -1106,6 +1144,19 @@ body {
     justify-content: flex-start;
 }
 
+.triangle-aside {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    left: 117px;
+    margin: auto;
+    border: 27px solid transparent;
+    border-top: 35px solid #eec643;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
 
 .item-header-aside {
     margin: 0;
@@ -1136,6 +1187,7 @@ body {
 
 .school__content-item-violin {
     display: flex;
+    position: relative;
     height: 167px;
     width: 25%;
     padding-bottom: 30px;
@@ -1143,6 +1195,7 @@ body {
 
 .school__content-item-summer {
     display: flex;
+    position: relative;
     height: 167px;
     width: 25%;
     margin-top: 30px;
@@ -1151,6 +1204,7 @@ body {
 
 .school__content-item-horse {
     display: flex;
+    position: relative;
     height: 167px;
     width: 25%;
 }

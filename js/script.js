@@ -42,6 +42,7 @@ ymaps.ready(function () {
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
+
         myPlacemarkWithContent = new ymaps.Placemark([59.94199306418127,30.279423499999996], {
             hintContent: 'Собственный значок метки с контентом',
             iconContent: ''
@@ -55,7 +56,7 @@ ymaps.ready(function () {
             iconImageSize: [38, 49],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-19, -49],
+            iconImageOffset: [-19, -12],
             // Смещение слоя с содержимым относительно слоя с картинкой.
             iconContentOffset: [15, 15],
             // Макет содержимого.

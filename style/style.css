@@ -472,7 +472,6 @@ display: none;
     color: transparent;
     overflow: hidden;
     border: 0;
-    transform: translateX(-50%);
 }
  
 .slick-next {
@@ -611,9 +610,13 @@ body {
 .topbar {
     display: flex;
     flex-direction: row;
-    align-content: flex-end;
     margin: 0;
     padding: 0;
+}
+
+.nav-main {
+    display: flex;
+
 }
 
 .nav-toggle {
@@ -622,10 +625,12 @@ body {
 
 .nav-main__list { 
     display: flex; 
-    flex-direction: row;    
+    flex-direction: row; 
+    position: relative;  
     margin: 0;
     padding: 0;
-    list-style: none;   
+    list-style: none;
+    background-color: transparent;   
 }
 
 .nav-main__link {

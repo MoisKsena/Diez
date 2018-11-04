@@ -25,6 +25,16 @@ $(document).ready(function(){
 			
 		}
 	}
+	$('.nav-toggle>span').on('click', function(){
+		if($(this).data('shown') != 'true'){
+			$('.nav-main__list', '.nav-main').show();
+			$(this).data('shown', 'true')
+		} else {
+			$('.nav-main__list', '.nav-main').hide();
+			$(this).data('shown', 'false')
+		}
+
+	});
 
 
 

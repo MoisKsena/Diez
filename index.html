@@ -15,23 +15,23 @@
 					<a href="#" class="logo__text">Diez</a>
 				</div>
 				<div class="topbar">
-					<nav class="nav-main" id="main-nav">
+					<nav class="nav-main j-mobile-nav" id="main-nav">
 						
 						<ul class="nav-main__list">
-							<li class="nav-main__item"><a href="/" class="nav-main__link">Направления</a></li>
-							<li class="nav-main__item"><a href="/" class="nav-main__link">О школе</a></li>
-							<li class="nav-main__item"><a href="/" class="nav-main__link">Видео</a></li>
-							<li class="nav-main__item"><a href="/" class="nav-main__link">Контакты</a></li>
+							<li class="nav-main__item"><a href="#grow-music" class="nav-main__link">Направления</a></li>
+							<li class="nav-main__item"><a href="#pace" class="nav-main__link">О школе</a></li>
+							<li class="nav-main__item"><a href="#school" class="nav-main__link">Видео</a></li>
+							<li class="nav-main__item"><a href="#contacts" class="nav-main__link">Контакты</a></li>
 						</ul>
 					</nav>
-					<div class="nav-toggle">
+					<button class="nav-toggle j-nav-toggle">
 						<span>Menu</span>
-					</div>
+					</button> 
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="promo">
+			<section class="promo" id="promo">
 				<div class="promo-wrapper">
 					<div class="promo__content">
 						<h1 class="promo__title"><span class="title-desktop">Diez -	школа музыкального искусства</span>Школа музыкального искусства</h1>
@@ -59,7 +59,7 @@
 					</div>
 				</div>				
 			</section>
-			<section class="grow-music">
+			<section class="grow-music" id="grow-music">
 				<div class="grow-music__title-wrap">
 					<h2 class="grow-music__title">Растим музыкантов</h2>
 				</div>
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="pace">
+			<section class="pace" id="pace">
 				<div class="pace-halfpart">
 					<div class="pace__title-wrap">
 						<h2 class="pace__title">Задаем темп</h2>
@@ -126,7 +126,7 @@
 					</div>				
 				</div>
 			</section>
-			<section class="school">
+			<section class="school" id="school">
 				<div class="school__title-wrap">
 					<h2 class="school__title">В стенах школы</h2>
 				</div>
@@ -134,6 +134,7 @@
 
 				<div id="slider" class="school__content">
 					<article class="school__content-item school__content-item-cherry">
+						<div class="triangle-big"></div>
 						<picture class="school__image">
  							<source srcset="images/video_card_img_1.jpg" media="screen and (min-width: 1200px)">
  							<img src="images/video_card_img_1.jpg" alt="">
@@ -141,8 +142,7 @@
 						<div class="school__caption school__caption--sign">
 							<h3 class="item-header">Зимняя вишня</h3>
 							<p class="item-description">Финальный концерт 2018 года</p>
-						</div>
-						<div class="triangle-big"></div>
+						</div>			
 					</article>
 					<article class="school__content-item school__content-item-violin">
 						<picture class="school__image">
@@ -179,7 +179,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="contacts__list">
 					<div class="contacts__header">
 						<h2 class="contacts__title">Ждем тебя</h2>

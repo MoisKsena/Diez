@@ -63,15 +63,14 @@ h4 {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 22px 16px;
+    padding: 34px 18px;
     margin: 0;
 }
 
-.logo { 
-    width: 70px;   
+.logo {   
     padding: 0;
     margin: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo__text {
@@ -85,107 +84,72 @@ h4 {
 
 .topbar {
     padding: 0;
-    margin: 0;
+    margin-right: 16px;
 }
-
-
 
 
 .nav-toggle {
-    transition: all .3s;
-    position: relative;
-    width: 22px;
-    height: 24px;
-    margin-left: 150px;
-    z-index: 1;
+    display: flex;
+    position: absolute;
+    z-index: 2;
 }
 
+
 .nav-toggle:before {
-  transition: all .3s;
   content: '';
   position: absolute;
   left: -10px;
   width: 3px;
-  height: 100%;
-  background-color: #fff;
-}
-
-.nav-toggle:after {
-  transition: all .3s;
-  content: '';
-  position: absolute;
-  left: 10px;
-  width: 3px;
-  height: 100%;
-  background-color: #fff;
-}
-
-.nav-toggle:before {
-  top: 0;
-}
-
-.nav-toggle:after {
-  bottom: 0;
+  height: 24px;
+  background-color: #f9fcfc;
 }
 
 .nav-toggle span {
   position: absolute;
-
-  bottom: 0;
+  content: '';
+  left: 0;
   margin: auto;
   width: 3px;
-  height: 100%;
+  height: 24px;
   font-size: 0;
+  background-color: #f9fcfc;
 }
 
-.nav-toggle span:before,
-.nav-toggle span:after {
-  transition: all .3s;
+.nav-toggle:after {
   content: '';
   position: absolute;
+  left: 10px;
   width: 3px;
-  height: 100%;
-  top: 0;
-  background-color: #fff;
-}
-
-.nav-toggle:hover:before,
-.nav-toggle:hover:after {
-  opacity: 0;
-}
-
-.nav-toggle:hover span:before {
-  transform: rotate(45deg);
-}
-
-.nav-toggle:hover span:after {
-    transform: rotate(-45deg);
+  height: 24px;
+  background-color: #f9fcfc;
 }
 
 
 
 
-.nav-main__list { 
-display: none; 
-    margin: 0;
-    list-style: none; 
-    /* display: block; */
-    width: 100vw;
-    height: 225px;
+.nav-main {
     position: absolute;
+    /* display: none; */ 
     top: 0;
     left: 0;
-    z-index: 1;
-    padding: 75px 15px;
+    right: 0; 
+    z-index: 2;
+    padding: 80px 18px 40px;
+    background-color: #000;
+}
+
+.nav-main__list { 
+    margin: 0;
+    padding: 0;
+    list-style: none; 
     font-family: PT Sans;
     font-size: 15px;
     text-transform: uppercase;
-    background-color: #000; 
+     
 }
 
 .nav-main__item {
-    display: block;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .nav-main__link {
@@ -396,6 +360,7 @@ display: none;
 
 .button__fist-lesson {
     display: flex;
+    position: relative;
     width: 20%;
     height: 144px;
     margin: 0;
@@ -404,7 +369,17 @@ display: none;
 }
 
 .pace__button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     transform: rotate(-90deg);
+    padding-right: 30px;
+    margin: 0 auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
@@ -586,9 +561,7 @@ body {
 .container {
     display: flex;
     width: 1170px;    
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding-top: 34px;
+    padding: 34px 0;
     margin: 0 auto;
 }
 
@@ -609,6 +582,7 @@ body {
 
 .topbar {
     display: flex;
+    position: static;
     flex-direction: row;
     margin: 0;
     padding: 0;
@@ -616,7 +590,10 @@ body {
 
 .nav-main {
     display: flex;
-
+    position: static;
+    align-items: flex-end;
+    padding: 0;
+    background-color: transparent;
 }
 
 .nav-toggle {
@@ -625,12 +602,8 @@ body {
 
 .nav-main__list { 
     display: flex; 
-    flex-direction: row; 
-    position: relative;  
     margin: 0;
     padding: 0;
-    list-style: none;
-    background-color: transparent;   
 }
 
 .nav-main__link {
@@ -663,6 +636,11 @@ body {
     width: 1170px;
     padding: 0; 
     margin: 0 auto; 
+}
+
+.promo__content {
+    padding: 0;
+    margin: 0;
 }
 
 .promo__title {
@@ -905,6 +883,7 @@ body {
     display: flex;
     margin: 0;
     padding-left: 30px;
+    padding-top: 24px;
     align-items: flex-start;
     transform: rotate(0deg);
     font-family: PT Sans;

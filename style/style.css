@@ -88,40 +88,62 @@ h4 {
 }
 
 
-.nav-toggle {
+.nav-toggle-menu {
     display: flex;
     position: absolute;
+    width: 22px;
+    height: 24px;
+    background: none;
+    border-left: 3px solid #f9fcfc;
+    border-right: 3px solid #f9fcfc;
+    border-top: none;
+    border-bottom: none;
     z-index: 2;
 }
 
-
-.nav-toggle:before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  width: 3px;
-  height: 24px;
-  background-color: #f9fcfc;
+.menu {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 3px;
+    font-size: 0;
+    border: none;
+    background-color: #f9fcfc;
 }
 
-.nav-toggle span {
-  position: absolute;
-  content: '';
-  left: 0;
-  margin: auto;
-  width: 3px;
-  height: 24px;
-  font-size: 0;
-  background-color: #f9fcfc;
+.nav-toggle-close {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: none;
+    z-index: 2;
 }
 
-.nav-toggle:after {
-  content: '';
-  position: absolute;
-  left: 10px;
-  width: 3px;
-  height: 24px;
-  background-color: #f9fcfc;
+.close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    margin: 0 auto;
+    right: 15px;
+    height: 28px;
+    width: 2px;
+    background-color: #f9fcfc;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
 }
 
 
@@ -129,7 +151,7 @@ h4 {
 
 .nav-main {
     position: absolute;
-    /* display: none; */ 
+    display: none;
     top: 0;
     left: 0;
     right: 0; 
@@ -445,17 +467,17 @@ h4 {
     height: 30px;
     font-size: 0;
     color: transparent;
+    background: none;
     overflow: hidden;
     border: 0;
 }
  
 .slick-next {
-    right: 0;
+    right: -30px;
 }
 
 .slick-prev {
-    left: 0;
-    z-index: 1;
+    left: -30px;
 }
 
 .slick-next:before {
@@ -553,7 +575,8 @@ body {
     z-index: 3;
 }
 
-.nav-toggle {
+.nav-toggle-close,
+.j-nav-toggle-menu {
     display: none;
 }
 

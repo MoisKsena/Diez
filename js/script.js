@@ -26,8 +26,8 @@ $(document).ready(function(){
 		}
 	}
 
-
-	var burgerBtn = $ ('.j-nav-toggle');
+/*
+	var burgerBtn = $ ('.j-nav-toggle-menu');
 	var mobileNav = $ ('.j-mobile-nav');
 	var isShown = false;
 
@@ -50,8 +50,20 @@ $(document).ready(function(){
 			mobileNav.hide();
 			isShown = false;
 		}
-	});
-	
+	});*/
+	 
+$('.j-nav-toggle-menu').on('click',function(){
+	$('.j-nav-toggle-menu').hide();
+	$('.j-mobile-nav').show();
+});
+
+$('.j-nav-toggle-close').on('click',function(){
+	$('.j-mobile-nav').hide();
+	$('.j-nav-toggle-menu').show();
+});
+
+
+
 
 
 

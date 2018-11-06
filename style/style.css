@@ -480,6 +480,18 @@ h4 {
     left: -30px;
 }
 
+.slick-prev:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
 .slick-next:before {
     content: '';
     position: absolute;
@@ -489,7 +501,7 @@ h4 {
     height: 15px;
     border-right: 1px solid #eec643;
     border-bottom: 1px solid #eec643;
-    transform: translate(-50% -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .contacts {
